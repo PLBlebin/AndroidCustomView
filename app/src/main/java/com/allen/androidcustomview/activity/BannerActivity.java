@@ -1,23 +1,21 @@
 package com.allen.androidcustomview.activity;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.allen.androidcustomview.R;
 import com.allen.androidcustomview.widget.banner.BannerView;
-import com.allen.androidcustomview.widget.banner.listener.OnPageChangeListener;
-import com.allen.androidcustomview.widget.banner.listener.OnPageClickListener;
 import com.allen.androidcustomview.widget.banner.PagerOptions;
 import com.allen.androidcustomview.widget.banner.holder.BannerViewHolder;
 import com.allen.androidcustomview.widget.banner.holder.BannerViewHolderCreator;
+import com.allen.androidcustomview.widget.banner.listener.OnPageClickListener;
 
 import java.util.ArrayList;
 import java.util.List;

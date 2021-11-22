@@ -1,7 +1,7 @@
 package com.allen.androidcustomview.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.allen.androidcustomview.R
 import com.allen.androidcustomview.bean.VoteBean
 import com.allen.androidcustomview.bean.VoteOption

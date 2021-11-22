@@ -1,6 +1,6 @@
 package com.allen.androidcustomview.adapter;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.allen.androidcustomview.R;
 import com.allen.androidcustomview.bean.UserBean;

@@ -1,8 +1,9 @@
 package com.allen.androidcustomview.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.allen.androidcustomview.R;
 import com.allen.androidcustomview.widget.PayPsdInputView;
@@ -15,7 +16,7 @@ public class PayPsdViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_psd_view);
 
-        passwordInputView = (PayPsdInputView) findViewById(R.id.password);
+        passwordInputView = findViewById(R.id.password);
 
         passwordInputView.setComparePassword( new PayPsdInputView.onPasswordListener() {
 

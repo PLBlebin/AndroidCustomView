@@ -1,8 +1,8 @@
 package com.allen.androidcustomview.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.allen.androidcustomview.R
 import com.allen.androidcustomview.widget.ClearScreenMode
 import com.allen.androidcustomview.widget.ClearScreenView

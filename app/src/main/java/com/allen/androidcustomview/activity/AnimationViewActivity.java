@@ -1,9 +1,9 @@
 package com.allen.androidcustomview.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.allen.androidcustomview.R;
 import com.allen.androidcustomview.widget.FadeInTextView;

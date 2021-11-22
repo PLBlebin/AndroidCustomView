@@ -3,9 +3,9 @@ package com.allen.androidcustomview.utils;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Build;
-import android.os.Bundle;
-import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
-import android.support.v4.os.CancellationSignal;
+
+import androidx.core.hardware.fingerprint.FingerprintManagerCompat;
+import androidx.core.os.CancellationSignal;
 
 /**
  * Created by xiaoyao on 2017/9/14.

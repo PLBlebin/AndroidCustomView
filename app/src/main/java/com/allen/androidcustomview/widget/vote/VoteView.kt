@@ -251,7 +251,7 @@ class VoteView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
 
     private fun drawBorder(canvas: Canvas) {
         borderPaint?.color = borderColor
-        canvas.drawRoundRect(bgRectF, borderRadius, borderRadius, borderPaint)
+        borderPaint?.let { canvas.drawRoundRect(bgRectF, borderRadius, borderRadius, it) }
     }
 
     private fun drawVoteContentText(canvas: Canvas) {
@@ -265,14 +265,22 @@ class VoteView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
             voteContentRectF.right = voteContentRectF.left + textWidth
         }
 
-        canvas.drawText(mVoteContent, voteContentRectF.centerX().toFloat(), voteContentBaseline.toFloat(), voteContentTextPaint)
+        voteContentTextPaint?.let {
+            canvas.drawText(mVoteContent!!, voteContentRectF.centerX().toFloat(), voteContentBaseline.toFloat(),
+                it
+            )
+        }
     }
 
     private fun drawVoteResultText(canvas: Canvas) {
         if (mProgress == -1f || mVoteResult.isNullOrBlank()) return
         //文字绘制到整个布局的中心位置
         voteResultTextPaint?.alpha = (255 * mScale).toInt()
-        canvas.drawText(mVoteResult, mWidth - voteResultMarginRight - voteResultRectF.centerX().toFloat(), voteResultBaseline.toFloat(), voteResultTextPaint)
+        voteResultTextPaint?.let {
+            canvas.drawText(mVoteResult!!, mWidth - voteResultMarginRight - voteResultRectF.centerX().toFloat(), voteResultBaseline.toFloat(),
+                it
+            )
+        }
     }
 
     private fun drawVoteRightIcon(canvas: Canvas) {

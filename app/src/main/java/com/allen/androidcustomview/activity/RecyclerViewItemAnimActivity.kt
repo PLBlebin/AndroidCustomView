@@ -1,10 +1,10 @@
 package com.allen.androidcustomview.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.allen.androidcustomview.R
 import com.allen.androidcustomview.adapter.ItemAnimAdapter
 import com.allen.androidcustomview.anim.RotateXItemAnimation

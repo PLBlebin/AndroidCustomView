@@ -8,12 +8,14 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PointF;
 import android.graphics.Rect;
-import android.support.annotation.Nullable;
+
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by xiaoyao on 2017/9/7.

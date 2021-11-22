@@ -3,11 +3,12 @@ package com.allen.androidcustomview.widget.banner;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
 
 import com.allen.androidcustomview.widget.banner.listener.OnPageChangeListener;
 import com.allen.androidcustomview.widget.banner.listener.OnPageClickListener;

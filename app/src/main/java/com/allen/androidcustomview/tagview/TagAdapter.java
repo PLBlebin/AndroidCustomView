@@ -1,11 +1,12 @@
 package com.allen.androidcustomview.tagview;
 
-import android.support.v7.widget.RecyclerView;
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.allen.androidcustomview.R;
 
@@ -39,7 +40,7 @@ public class TagAdapter extends RecyclerView.Adapter<TagAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(final TagAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final TagAdapter.ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         holder.mTextView.setText(tagList.get(position).getTag_name());
         holder.itemView.setTag(tagList.get(position));
         holder.mTextView.setOnClickListener(new View.OnClickListener() {

@@ -104,7 +104,7 @@ class CarMoveView @JvmOverloads constructor(context: Context, attrs: AttributeSe
             if (mCarBitmapRes == null) {
                 canvas?.drawRect(mRect, mCarPaint)
             } else {
-                canvas?.drawBitmap(mCarBitmapRes, null, mRect, mPaint)
+                canvas?.drawBitmap(mCarBitmapRes!!, null, mRect, mPaint)
             }
         }
     }

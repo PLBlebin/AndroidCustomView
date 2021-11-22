@@ -1,14 +1,15 @@
 package com.allen.androidcustomview.widget.banner;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
 
 import com.allen.androidcustomview.R;
 import com.allen.androidcustomview.widget.banner.adapter.BannerViewPagerAdapter;

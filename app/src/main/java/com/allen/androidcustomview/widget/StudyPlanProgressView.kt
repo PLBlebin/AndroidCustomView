@@ -110,7 +110,9 @@ class StudyPlanProgressView @JvmOverloads constructor(context: Context, attrs: A
             val left = marginLeftAndRight + (cellWidth + iconSize) * i
             iconRect.set(left, (mHeight - iconSize) / 2, left + iconSize, (mHeight + iconSize) / 2)
             val bitmap = if (isFinished(i)) iconCheckedBitmapRes else iconUncheckedBitmapRes
-            canvas.drawBitmap(bitmap, null, iconRect, iconPaint)
+            if (bitmap != null) {
+                canvas.drawBitmap(bitmap, null, iconRect, iconPaint)
+            }
             drawText(canvas, i)
         }
     }

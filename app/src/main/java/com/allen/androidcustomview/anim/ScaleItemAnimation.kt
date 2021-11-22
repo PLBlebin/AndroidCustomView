@@ -1,7 +1,7 @@
 package com.allen.androidcustomview.anim
 
-import android.support.v7.widget.RecyclerView
 import android.view.ViewPropertyAnimator
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * <pre>

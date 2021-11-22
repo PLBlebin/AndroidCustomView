@@ -8,11 +8,14 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-import android.support.annotation.Nullable;
+import android.os.Build;
 import android.util.AttributeSet;
 
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 
 /**
@@ -330,6 +333,7 @@ public class RadarWaveView extends View {
     /**
      * 暂停动画
      */
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void pause() {
         mAnimatorSet.pause();
     }

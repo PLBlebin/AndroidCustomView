@@ -1,13 +1,15 @@
 package com.allen.androidcustomview.widget.banner.adapter;
 
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
+
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.allen.androidcustomview.widget.banner.listener.OnPageClickListener;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+
 import com.allen.androidcustomview.widget.banner.holder.BannerViewHolder;
 import com.allen.androidcustomview.widget.banner.holder.BannerViewHolderCreator;
+import com.allen.androidcustomview.widget.banner.listener.OnPageClickListener;
 
 import java.util.ArrayList;
 import java.util.List;

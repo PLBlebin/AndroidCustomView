@@ -7,12 +7,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.support.annotation.Nullable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
-import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 import com.allen.androidcustomview.R;
 
@@ -228,10 +230,12 @@ public class CircleProgressBarView extends View {
         progressAnimator.start();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void pauseProgressAnimation() {
         progressAnimator.pause();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void resumeProgressAnimation() {
         progressAnimator.resume();
     }

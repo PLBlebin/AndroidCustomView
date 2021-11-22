@@ -6,10 +6,13 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+
+import androidx.annotation.RequiresApi;
 
 import com.allen.androidcustomview.R;
 
@@ -250,12 +253,14 @@ public class WaveViewBySinCos extends View {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void pauseAnimation() {
         if (valueAnimator != null) {
             valueAnimator.pause();
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void resumeAnimation() {
         if (valueAnimator != null) {
             valueAnimator.resume();
